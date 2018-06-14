@@ -1,0 +1,80 @@
+.item1 { 
+    grid-area: header; 
+    height: 140px;
+    background-color: #f0eded
+
+}
+.item3 { 
+    grid-area: main;
+    background-color: white
+ }
+.item4 { 
+    grid-area: right;
+    background-color: white
+ }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main right right right right';
+  grid-gap: 2px;
+  background-color: #f2f2f2;
+  padding: 5px;
+}
+
+.item1Section{
+    padding-left:30px; padding-top:50px
+}
+.heading1{
+    font-size: 30px
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+     background-color: #f2f2f2;
+}
+
+input[type=submit] {
+    width: 70px;
+    background-color: #726f6f;
+    color: white;
+    padding: 14px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.item3Form{
+    width: 350px;
+    padding-left: 70px;
+}
+.item3Table{
+    width: 500px;
+    padding-left: 150px;
+    overflow-x:auto;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 3px solid #f2f2f2;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
